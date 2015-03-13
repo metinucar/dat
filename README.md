@@ -51,7 +51,7 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository.
 
 ### Sensible OS X defaults
 When setting up a new Mac, you may want to set some sensible OS X defaults:
@@ -61,7 +61,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ```
 
 ### Install Homebrew formulae & Brew Casks
-When setting up a new Mac, first install [Homebrew](http://brew.sh/) and common Homebrew formulae and then [Brew Casks](caskroom.io).
+When setting up a new Mac, first install [Homebrew](http://brew.sh/) and common Homebrew formulae and then [Brew Casks](http://caskroom.io/).
 ```bash
 ./brew.sh
 ./brew-cask.sh
