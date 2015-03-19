@@ -615,9 +615,8 @@ EOD
 #defaults write com.apple.terminal FocusFollowsMouse -bool true
 #defaults write org.x.X11 wm_ffm -bool true
 
-# Install the Afterglow theme for iTerm
-# There is complete Base16 theme collection. Feel free to choose the one that pleases your eyes
-open "${HOME}/init/Afterglow.itermcolors"
+# Install the Base16 Solarized Dark theme for iTerm
+open "${HOME}/init/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
