@@ -96,5 +96,9 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
+# Install Gitsh
+brew tap thoughtbot/formulae
+brew install gitsh
+
 # Remove outdated versions from the cellar.
 brew cleanup
