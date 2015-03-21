@@ -95,6 +95,10 @@ brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
+brew install z
+
+# Install Rbenv
+brew install rbenv ruby-build
 
 # Install Gitsh
 brew tap thoughtbot/formulae
