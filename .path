@@ -1,0 +1,8 @@
+export PATH="$HOME/utils:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+# PHP
+export PATH="/Applications/MAMP/bin/php/php5.6.2/bin:$PATH"
+
+# Node
+export PATH="$HOME/.node/bin:$PATH"
