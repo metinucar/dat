@@ -14,14 +14,68 @@ alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 
-# alias hub as git
-alias git=hub
+# Git
+alias git=hub # alias hub as git
+alias gs='git status'
+alias gss='git status -s'
+alias ga='git add .'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gcm='git commit -v -m'
+alias gp='git push'
+alias gpo='git push origin'
+alias gl='git pull'
+alias gpr='git pull --rebase'
+alias gpp='git pull && git push'
+alias gup='git fetch && git rebase'
+alias gcl='git clone'
+alias gus='git reset HEAD'
+alias gm="git merge"
+alias gb='git branch'
+alias gco='git checkout'
+alias gdv='git diff -w "$@" | vim -R -'
+alias gmu='git fetch origin -v; git fetch upstream -v; git merge upstream/master' # Sync remote fork
+alias gll='git log --graph --pretty=oneline --abbrev-commit'
+alias gg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias ggs="gg --stat"
+# From http://blogs.atlassian.com/2014/10/advanced-git-aliases/
+# Show commits since last pull
+alias gnew="git log HEAD@{1}..HEAD@{0}"
+# Add uncommitted and unstaged changes to the last commit
+alias gcaa="git commit -a --amend -C HEAD"
 
-# i <3 u cask
+# Bundler Commands
+alias be='bundle exec'
+alias bi='bundle install'
+alias bl='bundle list'
+alias bu='bundle update'
+alias bp='bundle package'
+
+# Some aliases for Homebrew and Brew Cask
+alias brwe=brew
+alias bup='brew update && brew upgrade'
+alias bout='brew outdated'
+alias bin='brew install'
+alias brm='brew uninstall'
+alias bls='brew list'
+alias bsr='brew search'
+alias binf='brew info'
+alias bdr='brew doctor'
+alias bcin='brew-cask install'
+alias bcrm='brew-cask uninstall'
+alias bcsr='brew-cask search'
 alias cask="brew cask"
 
-#typos
-alias brwe=brew
+# General aliases
+alias c='clear'
+alias k='clear'
+alias cls='clear'
+alias q='exit'
+alias rb='ruby'
+
+# Directory
+alias	md='mkdir -p'
+alias	rd='rmdir'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
