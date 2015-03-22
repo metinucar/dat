@@ -1,8 +1,14 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
-# Rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
+export PATH="$HOME/utils:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/Applications/MAMP/bin/php/php5.6.2/bin:$PATH" # php
+export PATH="$HOME/.node/bin:$PATH" # node
+export RBENV_ROOT=/usr/local/var/rbenv #rbenv
+
+# Don't check mail when opening terminal.
+unset MAILCHECK
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
