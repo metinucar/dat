@@ -18,7 +18,6 @@ alias h="history"
 alias reload='source ~/.bash_profile'
 
 # Git
-alias git=hub # alias hub as git
 alias gs='git status'
 alias gss='git status -s'
 alias ga='git add .'
