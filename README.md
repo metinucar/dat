@@ -27,3 +27,8 @@ source brew.sh
 source brew-cask.sh
 ```
 
+## Sync the fork
+```bash
+git fetch origin -v; git fetch upstream -v; git merge upstream/master
+```
+
