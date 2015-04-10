@@ -16,7 +16,6 @@ brew cask install chrome
 brew cask install dash
 brew cask install dropbox
 brew cask install evernote
-brew cask install fantastical
 brew cask install firefox
 brew cask install flux
 brew cask install github
@@ -39,3 +38,4 @@ brew cask install torbrowser
 brew cask install transmission
 brew cask install virtualbox
 brew cask install vlc
+brew cask install licecap
