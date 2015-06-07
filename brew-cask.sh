@@ -37,5 +37,6 @@ brew cask install the-unarchiver
 brew cask install torbrowser
 brew cask install transmission
 brew cask install virtualbox
+brew cask install vagrant
 brew cask install vlc
 brew cask install licecap
