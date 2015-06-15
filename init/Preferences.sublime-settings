@@ -70,9 +70,9 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Markdown",
 		"Vintage",
 		"GitGutter",
+		"Markdown",
 		"Git"
 	],
 	"match_brackets": true,
