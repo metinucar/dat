@@ -11,13 +11,13 @@ alias d="cd /Users/mtncr/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
-alias g="git"
 alias h="history"
 
 # Source .bash_profile
 alias reload='source ~/.bash_profile'
 
 # Git
+alias g="git"
 alias gs='git status'
 alias gss='git status -s'
 alias ga='git add .'
@@ -207,6 +207,13 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Efficient image resizing with imagemagick
+# Source: http://www.smashingmagazine.com/2015/06/25/efficient-image-resizing-with-imagemagick/
+# Example: smartresize inputfile.png 300 outputdir/
+smartresize() {
+   mogrify -path $3 -filter Triangle -define filter:support=2 -thumbnail $2 -unsharp 0.25x0.08+8.3+0.045 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB $1
+}
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
