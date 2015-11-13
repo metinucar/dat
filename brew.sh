@@ -104,9 +104,5 @@ brew install z
 # Install Rbenv
 brew install rbenv ruby-build
 
-# Install Gitsh
-brew tap thoughtbot/formulae
-brew install gitsh
-
 # Remove outdated versions from the cellar.
 brew cleanup
