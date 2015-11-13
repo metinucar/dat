@@ -1,7 +1,6 @@
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-brew cask install 1password
 brew cask install appcleaner
 brew cask install atom
 brew cask install bartender
