@@ -10,7 +10,7 @@ brew cask install bowtie
 brew cask install caffeine
 brew cask install calibre
 brew cask install ccleaner
-brew cask install chrome
+brew cask install google-chrome
 brew cask install dash
 brew cask install dropbox
 brew cask install evernote
