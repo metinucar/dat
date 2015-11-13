@@ -19,7 +19,6 @@ brew cask install github-desktop
 brew cask install handbrake
 brew cask install imageoptim
 brew cask install iterm2
-brew cask install moom
 brew cask install noizio
 brew cask install sequel-pro
 brew cask install sketch-toolbox
