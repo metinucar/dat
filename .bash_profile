@@ -3,7 +3,8 @@ export PATH="$HOME/bin:$PATH";
 
 export PATH="$HOME/utils:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/Applications/MAMP/bin/php/php5.6.2/bin:$PATH" # php
+export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="/Applications/MAMP/bin/php/php5.6.2/bin:$PATH" # php
 export PATH="$HOME/.node/bin:$PATH" # node
 export RBENV_ROOT=/usr/local/var/rbenv #rbenv
 
@@ -58,6 +59,10 @@ fi
 # if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 eval "$(rbenv init -)"
 
+# ssh-agent
+# Run ssh-agent by default
+eval "$(ssh-agent -s)"
+
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
@@ -67,3 +72,8 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
